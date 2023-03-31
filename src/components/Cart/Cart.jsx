@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleData from '../SingleData/SingleData';
 import ShowData from '../ShowData/ShowData';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Cart = () => {
@@ -13,9 +14,6 @@ const Cart = () => {
         // console.log(readtimeData,parseInt(time));
         setReadtime(readtimeData);
     }
-    const notify = () =>{
-        toast ("Already Bookmarked");
-    }
     useEffect(()=>{
         fetch('knowledge.json')
         .then(res=>res.json())
@@ -25,17 +23,18 @@ const Cart = () => {
     let bookMarkData = [];
 
     const addToBookmark = (cart)=>{
-        //addToDb(cart.blog_title);
+        let j = 0;
         let newBookMark = cart.blog_title;
-        for(let i=0; i<bookMarkData.length-1; i++){
-            if(bookMarkData.indexOf(bookMarkData[i],i+1) !==-1){
-               
-            }
-        }
+        bookmark && bookmark.map(element=> {
+            if(newBookMark == element){
+                if(j<1){
+                    toast("Already Bookmarked");
+                }
+                j++;
+            }           
+        });
         setBookmark(bookMarkData => [...bookMarkData,newBookMark]);
-        
     }
-    // console.log(bookmark);
 
     return (
         <div className="mt-5 lg:flex justify-between">
