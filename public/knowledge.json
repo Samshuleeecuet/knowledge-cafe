@@ -1,0 +1,42 @@
+[
+    {
+      "id": "1",
+      "author_name": "Connie Suarez",
+      "blog_title": "How to get your first job as a self-taught programmer",
+      "blog_image": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=900&t=st=1680234302~exp=1680234902~hmac=efc3d8a6f0fbf4ebf6635d1bf6aa44c7855357845b0c970d8b2023798275b454",
+      "author_image": "https://img.freepik.com/free-photo/handsome-mature-businessman-looking-confident-smiling_176420-31691.jpg?w=996&t=st=1680234530~exp=1680235130~hmac=3a0164006783ce5a3153b1c884232fa3f2a3a54ab77060e32024ce6570d30653",
+      "read_time": "05",
+      "publish_date": "Mar 14 (4 Days ago)",
+      "tag": "#beginners #programming"
+    },
+    {
+      "id": "2",
+      "author_name": "Mrs. Setara",
+      "blog_title": "The End of Front-End Development",
+      "blog_image": "https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?w=996&t=st=1680235454~exp=1680236054~hmac=adc2b3dbfd12fad2a6d84e4e401e4b02e2a20fcc008a297b9ee85269cf4abf40",
+      "author_image": "https://img.freepik.com/free-photo/handsome-mature-businessman-looking-confident-smiling_176420-31691.jpg?w=996&t=st=1680234530~exp=1680235130~hmac=3a0164006783ce5a3153b1c884232fa3f2a3a54ab77060e32024ce6570d30653",
+      "read_time": "10",
+      "publish_date": "Mar 18 (6 Days ago)",
+      "tag": "#programming #HTML #CSS"
+    },
+    {
+      "id": "3",
+      "author_name": "Mina Mostofa",
+      "blog_title": "How to build an inline edit component in React",
+      "blog_image": "https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?w=996&t=st=1680235604~exp=1680236204~hmac=6b361dbceeb581d52bb636106bfeed82857df6a30e13f91ba6487faef9115a55",
+      "author_image": "https://img.freepik.com/free-photo/handsome-mature-businessman-looking-confident-smiling_176420-31691.jpg?w=996&t=st=1680234530~exp=1680235130~hmac=3a0164006783ce5a3153b1c884232fa3f2a3a54ab77060e32024ce6570d30653",
+      "read_time": "12",
+      "publish_date": "Mar 21 (8 Days ago)",
+      "tag": "#programming #React #JS"
+    },
+    {
+      "id": "4",
+      "author_name": "Mina Mostofa",
+      "blog_title": "React Project Ideas, and How to Invent Your Own",
+      "blog_image": "https://img.freepik.com/free-photo/3d-render-code-testing-functional-test-usability_107791-16607.jpg?w=1380&t=st=1680235681~exp=1680236281~hmac=fe92bdbb234d9ea5faa1b318a996f71435e331112bc58b3313faa09e49f854ae",
+      "author_image": "https://img.freepik.com/free-photo/handsome-mature-businessman-looking-confident-smiling_176420-31691.jpg?w=996&t=st=1680234530~exp=1680235130~hmac=3a0164006783ce5a3153b1c884232fa3f2a3a54ab77060e32024ce6570d30653",
+      "read_time": "17",
+      "publish_date": "Mar 26 (3 Days ago)",
+      "tag": "#programming #React #JS"
+    }
+  ]
