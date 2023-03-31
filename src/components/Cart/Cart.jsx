@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleData from '../SingleData/SingleData';
 import ShowData from '../ShowData/ShowData';
-//import { toast } from 'react-toastify/dist/components';
+// import { toast } from 'react-toastify/dist/components';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
@@ -14,7 +14,9 @@ const Cart = () => {
         // console.log(readtimeData,parseInt(time));
         setReadtime(readtimeData);
     }
-
+    const notify = () =>{
+        toast ("Already Bookmarked");
+    }
     useEffect(()=>{
         fetch('knowledge.json')
         .then(res=>res.json())
@@ -26,14 +28,19 @@ const Cart = () => {
     const addToBookmark = (cart)=>{
         //addToDb(cart.blog_title);
         let newBookMark = cart.blog_title;
-        
+        for(let i=0; i<bookMarkData.length-1; i++){
+            if(bookMarkData.indexOf(bookMarkData[i],i+1) !==-1){
+                notify();
+                <ToastContainer></ToastContainer>
+            }
+        }
         setBookmark(bookMarkData => [...bookMarkData,newBookMark]);
         
     }
     // console.log(bookmark);
 
     return (
-        <div className="mt-5 flex justify-between">
+        <div className="mt-5 lg:flex justify-between">
             <div>
             {
                 cart.map(singledata => <SingleData singledata={singledata} handleReadtime={handleReadtime} addToBookmark={addToBookmark} key={singledata.id}></SingleData>)
