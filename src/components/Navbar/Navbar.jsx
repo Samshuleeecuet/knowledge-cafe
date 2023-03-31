@@ -19,7 +19,7 @@ const Navbar = () => {
                     <li><a>About</a></li>
                     <li><div className="avatar">
                     <div className="w-12 rounded-full">
-                        <img src="/public/photo-user.jpeg"/>
+                        <img src="https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
                     </div>
                     </div></li>
                 </ul>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <li><a>About</a></li>
                 <li><div className="avatar">
                     <div className="w-12 rounded-full">
-                        <img src="/public/photo-user.jpeg"/>
+                        <img src="https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
                     </div>
                     </div></li>
                 </ul>
