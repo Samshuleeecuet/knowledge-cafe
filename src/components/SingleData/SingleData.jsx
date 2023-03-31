@@ -15,7 +15,7 @@ const SingleData = (props) => {
                     <div className="flex justify-between">
                         <div className="flex w-full ">
                             <div className="avatar">
-                                <div className="w-12 sm:h-12  rounded-full">
+                                <div className="w-12 h-12 rounded-full">
                                     <img src={author_image}/>
                                 </div>
                             </div>

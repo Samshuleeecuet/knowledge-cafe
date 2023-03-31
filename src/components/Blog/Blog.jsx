@@ -7,7 +7,7 @@ const Blog = () => {
             <div className="card w-full glass shadow-xl mb-5">
                 <h2 className="card-title">1. Props Vs State</h2>
                 <div className="card-body flex text-left flex-row">
-                    <div className="w-11/12">
+                    <div className="w-12/12 lg:w-10/12">
                         <p><b>Props</b></p>
                         <p>1. Props are read-only.</p>
                         <p>2. Props are immutable.</p>
