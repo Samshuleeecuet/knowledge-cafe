@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleData from '../SingleData/SingleData';
 import ShowData from '../ShowData/ShowData';
-// import { toast } from 'react-toastify/dist/components';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const Cart = () => {
     const [cart,setCart]=useState([]);
@@ -30,8 +29,7 @@ const Cart = () => {
         let newBookMark = cart.blog_title;
         for(let i=0; i<bookMarkData.length-1; i++){
             if(bookMarkData.indexOf(bookMarkData[i],i+1) !==-1){
-                notify();
-                <ToastContainer></ToastContainer>
+               
             }
         }
         setBookmark(bookMarkData => [...bookMarkData,newBookMark]);
