@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const SingleData = (props) => {
     const {id,author_name,author_image,blog_image,blog_title,publish_date,read_time,tag}= props.singledata;
-    console.log(props);
-
+    //console.log(props);
+    const handleReadtime =props.handleReadtime;
+    const addToBookmark = props.addToBookmark;
     return (
         <div>
             <div className="card lg:w-11/12 mt-5 sm:w-96 glass shadow-xl">
@@ -23,16 +24,18 @@ const SingleData = (props) => {
                                 <p className="text-gray-500">{publish_date}</p>
                             </div>
                         </div>
-                       <div className="text-gray-500 w-full">
+                       <div className="text-gray-500 w-full sm:text-right">
                             <span>{read_time} min read </span>
-                            <button><FontAwesomeIcon icon={faBookmark} /></button>
+                            <button onClick={()=>addToBookmark(props.singledata)}><FontAwesomeIcon icon={faBookmark} /></button>
                         </div>               
                     </div>
                     <div className="font-bold text-3xl text-left sm:text-lg py-4">
                         <p>{blog_title}</p>
                     </div>
                         <p className="text-left text-gray-600">{tag}</p>
-                        <span className="btn w-44 underline text-blue-600">Mark as read</span>
+                    <div className="text-left">
+                    <a onClick={()=>handleReadtime(read_time)} className="w-36 cursor-pointer underline text-blue-600">Mark as read</a>
+                    </div>
                 </div>
             </div>
             
